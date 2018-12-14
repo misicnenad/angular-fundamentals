@@ -12,6 +12,7 @@ export class AuthService {
 			firstName: 'John',
 			lastName: 'Papa'
 		}
+		console.log(this.currentUser);
 	}
 
 	isAuthenticated() {

@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 import { RouterModule } from '@angular/router'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
-
+import { HttpClientModule } from "@angular/common/http"
 import {
 	EventsListComponent,
 	EventThumbnailComponent,
@@ -10,13 +10,13 @@ import {
 	CreateEventComponent,
 	EventService,
 	EventListResolver,
-	EventRouteActivator,
 	CreateSessionComponent,
 	SessionListComponent,
 	DurationPipe,
 	UpvoteComponent,
 	VoterService,
-	LocationValidator
+	LocationValidator,
+	EventResolver
 } from "./events/index"
 import { EventsAppComponent } from './events-app.component'
 import { NavBarComponent } from './nav/navbar.component'
@@ -50,12 +50,13 @@ let jQuery = window['$']
 		BrowserModule,
 		FormsModule,
 		ReactiveFormsModule,
+		HttpClientModule,
 		RouterModule.forRoot(routes)
 	],
 	providers: [
 		EventService,
 		EventListResolver,
-		EventRouteActivator,
+		EventResolver,
 		AuthService,
 		VoterService,
 		{ provide: TOASTR_TOKEN, useValue: toastr },
