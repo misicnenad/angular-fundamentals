@@ -1,5 +1,5 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser'
+import { NgModule } from '@angular/core'
 
 import {
 	EventsListComponent,
@@ -9,16 +9,17 @@ import {
 	EventService,
 	EventListResolver,
 	EventRouteActivator,
-	CreateSessionComponent
-} from "./events/index";
-import { EventsAppComponent } from './events-app.component';
-import { NavBarComponent } from './nav/navbar.component';
-import { RouterModule } from '@angular/router';
-import { routes } from './routes';
-import { ToastrService } from './common/toastr.service';
-import { Error404Component } from './error/404.component';
-import { AuthService } from './user/auth.service';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+	CreateSessionComponent,
+	SessionListComponent
+} from "./events/index"
+import { EventsAppComponent } from './events-app.component'
+import { NavBarComponent } from './nav/navbar.component'
+import { RouterModule } from '@angular/router'
+import { routes } from './routes'
+import { ToastrService } from './common/toastr.service'
+import { Error404Component } from './error/404.component'
+import { AuthService } from './user/auth.service'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 
 @NgModule({
 	declarations: [
@@ -29,7 +30,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 		CreateEventComponent,
 		Error404Component,
 		NavBarComponent,
-		CreateSessionComponent
+		CreateSessionComponent,
+		SessionListComponent
 	],
 	imports: [
 		BrowserModule,
