@@ -13,6 +13,6 @@ export class EventsAppComponent implements OnInit {
 	constructor(private auth: AuthService) { }
 
 	ngOnInit() {
-		this.auth.checkAuthenticationStatus()
+		this.auth.checkAuthenticationStatus();
 	}
 }

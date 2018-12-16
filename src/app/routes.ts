@@ -1,6 +1,6 @@
-import { Routes } from "@angular/router"
-import { Error404Component } from "./error/404.component"
-import { CreateEventComponent, EventsListComponent, EventDetailsComponent, EventListResolver, CreateSessionComponent, EventResolver } from "./events/index";
+import { Routes } from '@angular/router';
+import { Error404Component } from './error/404.component';
+import { CreateEventComponent, EventsListComponent, EventDetailsComponent, EventListResolver, CreateSessionComponent, EventResolver } from './events/index';
 
 export const routes: Routes = [
 	{ path: 'events/new', component: CreateEventComponent, canDeactivate: ['canDeactivateCreateEvent'] },
@@ -10,4 +10,4 @@ export const routes: Routes = [
 	{ path: '404', component: Error404Component },
 	{ path: '', redirectTo: '/events', pathMatch: 'full' },
 	{ path: 'user', loadChildren: './user/user.module#UserModule' }
-]
+];
