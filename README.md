@@ -16,8 +16,8 @@ The application loads Events from the server and lists them on the screen. The u
 
  - Open the terminal (depending on which OS you are using it can be Powershell, Linux terminal etc.) and navigate to the root of the project.
  - Run `npm install` from the root folder to install all the necessary npm packages.
- - Run `npm run server` to start the back-end server that will serve all the data the Angular froned-end needs.
- - Open a new terminal windows and run `npm start` (or run `ng serve -o` if you are using the Angular CLI); after the app is ready it will automatically open in your default browser window on http://localhost:4200/events.
+ - Run `npm run server` to start the back-end server that will serve all the data the Angular fronted-end needs.
+ - Open a new terminal windows and run `npm start` (or run `ng serve -o` if you are using the Angular CLI); after the app is ready it will automatically open in your default browser window on http://localhost:4200/events .
 
  ## License
 
