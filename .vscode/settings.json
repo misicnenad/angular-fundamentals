@@ -2,7 +2,7 @@
 	"editor.tabCompletion": "on",
 	"editor.insertSpaces": false,
 	"editor.detectIndentation": false,
-	"files.autoSave": "afterDelay",
+	"files.autoSave": "onFocusChange",
 	"javascript.format.insertSpaceAfterConstructor": true,
 	"files.trimFinalNewlines": true,
 	"editor.formatOnType": true,
