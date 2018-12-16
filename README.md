@@ -4,7 +4,7 @@ This project was created while following the [Angular Fundamentals tutorial](htt
 
 ## Short description
 
-The application loads Events from the server and lists them on the screen. The user can login, create new events, search existing ones and create sessions for events. 
+The application loads Events from the server and lists them on the screen. The user can login, create new events, search existing events and create sessions for events. 
 
 ## Prerequisites
 
