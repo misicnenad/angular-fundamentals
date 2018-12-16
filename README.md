@@ -1,27 +1,24 @@
-# NgFundamentals
+# Angular Fundamentals
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.2.
+This project was created while following the [Angular Fundamentals tutorial](https://app.pluralsight.com/library/courses/angular-fundamentals/table-of-contents) on [Pluralsight](https://app.pluralsight.com) created by Joe Eames and Jim Cooper. It's main purpose is to showcase the most important capabilities of Angular, all combined within a single runnable project.
 
-## Development server
+## Short description
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The application loads Events from the server and lists them on the screen. The user can login, create new events, search existing ones and create sessions for events. 
 
-## Code scaffolding
+## Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ - Node.js - [download](https://nodejs.org/en/download/).
 
-## Build
+ - Angular - [how to install](https://angular.io/guide/quickstart).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Running the app
 
-## Running unit tests
+ - Open the terminal (depending on which OS you are using it can be Powershell, Linux terminal etc.) and navigate to the root of the project.
+ - Run `npm install` from the root folder to install all the necessary npm packages.
+ - Run `npm run server` to start the back-end server that will serve all the data the Angular froned-end needs.
+ - Open a new terminal windows and run `npm start` (or run `ng serve -o` if you are using the Angular CLI); after the app is ready it will automatically open in your default browser window on http://localhost:4200/events.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ ## License
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+ MIT.
