@@ -1,18 +1,11 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormControl, Validators, FormGroup } from '@angular/forms';
-import { ISession, restrictedWords } from '../shared/index';
+import { ISession, restrictedWords } from '../../shared/index';
 
 @Component({
 	selector: 'create-session',
 	templateUrl: './create-session.component.html',
-	styles: [`
-		em { float: right; color: #e05c65; padding-left: 10px }
-		.error input, .error select, .error textarea { background-color: #e3c3c5 }
-		.error ::-webkit-input-placeholder { color: #999 }
-		.error ::-moz-placeholder { color: #999 }
-		.error :-moz-placeholder { color: #999 }
-		.error :ms-input-placeholder { color: #999 }
-	`]
+	styleUrls: ['./create-session.component.css']
 })
 export class CreateSessionComponent implements OnInit {
 
